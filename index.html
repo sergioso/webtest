@@ -11,6 +11,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/src/css/swipebox.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -51,16 +52,15 @@
 											</figcaption>
 											<a href="#kids"></a>
 										  </figure>-->
-										  <!---->
+										  <!--
 										  <figure class="snip1361">
 											<img src="images/home01.png" alt="Cursos para niños" />
 											<figcaption>
 											  	<h3>Kids y Junior</h3>
 												<p>Para niños entre 6 y 12 años.
-													<a href="#kids"></a>
 												</p>											  
 											</figcaption>
-											<!--<a href="#kids"></a>-->
+											<a href="#kids"></a>
 										  </figure>
 
 										  <figure class="snip1361">
@@ -79,33 +79,45 @@
 											  <p>2 x 1 de Lunes a Viernes.</p>
 											</figcaption>
 											<a href="#especiales"></a>
-										  </figure>
+										  </figure>-->
 
 										<!---->
-										<!--<div class="col-4 col-6-medium col-12-small">
-											<a href="#kids" class="image fit"><img src="images/rob01.png" alt="Cursos para niños"><span>Robótica Kids</span></a>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#kids" class="image fit" title="Robótica Kids"><img src="images/homekids.png" alt="Cursos para niños"></a>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#adultos" class="image fit"><img src="images/rob02.png" alt="Cursos para adultos"><span>Cursos</span></a>
+											<a href="#adultos" class="image fit" title="Cursos y Talleres"><img src="images/homeCursos.png" alt="Cursos para adultos"></a>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#especiales" class="image fit"><img src="images/rob03.png" alt="Cursos especiales"><span>Promociónes</span></a>
-										</div>-->
+											<a href="#especiales" class="image fit" title="Promociónes"><img src="images/homePromociones.png" alt="Cursos especiales"></a>
+										</div>
 									</div>
 								</section>
 							</article>
 
 						<!-- kids -->
-						<article id="kids" class="panel intro">
+						<!--<article id="kids" class="panel intro">
 							<a href="#home" class="icon solid fa-chevron-left"><span>Inicio</span></a>
 							<header>
 								<h1>Robotica kids</h1>
 								<iframe width=auto height=auto src="https://www.youtube.com/embed/-qWCDDHLkVg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-							<!--	<iframe width=auto height=auto src="https://www.youtube.com/embed/m2DXDgWgHBE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+								<iframe width=auto height=auto src="https://www.youtube.com/embed/m2DXDgWgHBE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</header>
 
 								<img src="images/rob00.png" alt="" />
 
+						</article>-->
+						<article id="kids" class="panel container">
+							<a href="#home" class="icon solid fa-chevron-left" title="Inicio"></a>
+							<div class="wrap small-width">
+								<div id="box-container">
+									<div class="box">
+										<a href="https://www.youtube.com/embed/-qWCDDHLkVg" class="swipebox-video" title="Robótica Kids">
+											<img src="images/rob00.png" alt="robot">
+										</a>
+									</div>
+								</div>
+							</div>
 						</article>
 
 						<!-- Adultos -->
@@ -437,6 +449,19 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/lib/jquery-2.1.0.min.js"></script>
+			<script src="assets/src/js/jquery.swipebox.js"></script>
+			<script type="text/javascript">
+				;( function( $ ) {
+				
+					$( '.swipebox' ).swipebox();
+					$( '.swipebox-video' ).swipebox({
+						beforeOpen: function() {}, // called before opening
+					});
+					
+				
+				} )( jQuery );
+				</script>
 
 	</body>
 </html>
