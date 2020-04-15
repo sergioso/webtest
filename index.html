@@ -10,18 +10,21 @@
 		<link rel="icon" type="img/png" href="images/logos/favicon.png" />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!-- Materialize CSS -->
+		<link rel="stylesheet" href="framework/materialize/css/materialize.css">
+		<!-- CSS -->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/src/css/swipebox.css">
+		<!--<link rel="stylesheet" href="plugins/swipebox/css/swipebox.min.css">-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
 		<!-- Wrapper-->
-			<div id="wrapper">
-				
+			<div id="nav-wrapper">
+
 				<!-- Nav -->
-					<nav id="nav">
-						<!--<a href="#home" class="icon solid"><img src="images/logos/logo.png" max-width=100% height=60% alt="iRDA" /><span>Inicio</span></a>-->
+					<nav id="nav" class="transparent">
+						<!--<a href="#" class="icon solid left"><img src="images/logos/logo.png" max-width=100% height=60% alt="iRDA" /><span>Inicio</span></a>-->
 						<a href="#home" class="icon solid fa-home"><span>Inicio</span></a>
 						<a href="http://www.facebook.com/IRDA-2594876774069903/" target="_blank" class="icon brands fa-facebook"><span>Facebook</span></a>
 						<a href="#contacto" class="icon solid fa-envelope"><span>Contacto</span></a>
@@ -31,11 +34,16 @@
 				<!-- Main -->
 					<div id="main">
 
+						<header class="container">
+							<a href="#home" class="responsive-img"><img src="images/logos/logo.png" height=50em alt="iRDA">								
+								<a>
+									<h6 class="flow-text blue-text">Instituto de Robótica y Domótica Aplicada</h6>
+								</a>
+							</a>
+						</header>
+
 						<!-- Work -->
 							<article id="home" class="panel">
-								<header>
-									<h2>Talleres y Cursos.</h2>
-								</header>
 								<section>
 									<div class="row">
 										<!-- PRUEBA DE DISEÑO ANIMACION DE IMAGENES -->
@@ -52,45 +60,59 @@
 											</figcaption>
 											<a href="#kids"></a>
 										  </figure>-->
-										  <!--
-										  <figure class="snip1361">
-											<img src="images/home01.png" alt="Cursos para niños" />
+										  
+										<div class="col-4 col-6-medium col-12-small">
+										  <figure class="snip1361 image fit">
+											<img src="images/cuadro01.png" alt="Cursos para niños" />
 											<figcaption>
-											  	<h3>Kids y Junior</h3>
+												  <h1>Kids y Junior</h1>
+											</br>
 												<p>Para niños entre 6 y 12 años.
 												</p>											  
 											</figcaption>
 											<a href="#kids"></a>
 										  </figure>
+										</div>
 
-										  <figure class="snip1361">
-											<img src="images/home02.png" alt="Cursos para adultos" />
+										<div class="col-4 col-6-medium col-12-small">
+										  <figure class="snip1361 image fit">
+											<img src="images/cuadro02.png" alt="Cursos para adultos" />
 											<figcaption>
-											  <h3>Cursos</h3>
+											  <h1>Adultos</h1>
+											</br>
 											  <p>De 40 horas. Registrados en la STPS.</p>
 											</figcaption>
 											<a href="#adultos"></a>
 										  </figure>
+										</div>
 
-										  <figure class="snip1361">
-											<img src="images/home03.png" alt="Promociones" />
+										<div class="col-4 col-6-medium col-12-small">
+										  <figure class="snip1361 image fit">
+											<img src="images/cuadro03.png" alt="Promociones" />
 											<figcaption>
-											  <h3>Promoción</h3>
+											  <h1>Promociónes</h1>
+											</br>
 											  <p>2 x 1 de Lunes a Viernes.</p>
 											</figcaption>
 											<a href="#especiales"></a>
-										  </figure>-->
+										  </figure>
+										</div>
 
 										<!---->
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#kids" class="image fit" title="Robótica Kids"><img src="images/homekids.png" alt="Cursos para niños"></a>
+										<!--<div class="col-4 col-6-medium col-12-small">
+											<iframe src="iframe/homeKids/index.html" class="image" width="260" height="230" alt="Cursos para niños"></iframe>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#adultos" class="image fit" title="Cursos y Talleres"><img src="images/homeCursos.png" alt="Cursos para adultos"></a>
+											<a href="#kids" title="Robótica Kids"></a>
+												<iframe src="iframe/homeKids/index.html" class="image" width="260" height="230" alt="Cursos para niños"></iframe>
+											</a>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#especiales" class="image fit" title="Promociónes"><img src="images/homePromociones.png" alt="Cursos especiales"></a>
+											<a href="#adultos" title="Cursos y Talleres"><img class="image fit" src="images/homeCursos.png" alt="Cursos para adultos"></a>
 										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#especiales" class="image fit" title="Promociónes"><img class="image fit" src="images/homePromociones.png" alt="Cursos especiales"></a>
+										</div>-->
 									</div>
 								</section>
 							</article>
@@ -107,32 +129,40 @@
 								<img src="images/rob00.png" alt="" />
 
 						</article>-->
-						<article id="kids" class="panel container">
-							<a href="#home" class="icon solid fa-chevron-left" title="Inicio"></a>
-							<div class="wrap small-width">
-								<div id="box-container">
-									<div class="box">
-										<a href="https://www.youtube.com/embed/-qWCDDHLkVg" class="swipebox-video" title="Robótica Kids">
-											<img src="images/rob00.png" alt="robot">
-										</a>
+						<article id="kids" class="panel">
+							<section>
+								<a href="#home" class="icon solid fa-chevron-left" title="Inicio"></a>
+								<div class="row">
+									<div class="col-4 col-6-medium col-12-small">
+										<iframe src="iframe/homeKids/index.html" class="image" width="260" height="230" alt="Cursos para niños"></iframe>
 									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<iframe src="iframe/homeKids/index.html" class="image" width="260" height="230" alt="Cursos para niños"></iframe>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<iframe width=260 height=230 src="https://www.youtube.com/embed/-qWCDDHLkVg" class="image" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+							
+
 								</div>
-							</div>
+							</section>
 						</article>
 
 						<!-- Adultos -->
 						<article id="adultos" class="panel">
 							<header>
-								<h2>Talleres y Cursos.</h2>
+								<h2></h2>
 							</header>
+							<a href="#home" class="icon solid fa-chevron-left" title="Inicio"></a>
 							<section>
 								<div class="row">
 									<div class="col-4 col-6-medium col-12-small">
 										<!--<a href="#electronica" class="image fit"><img src="images/pic01.jpg" alt="electronica"><span>Electrónica</span></a>-->
-										<figure class="snip1361">
+										<figure class="snip1361 image fit">
 											<img src="images/pic01.jpg" alt="electronica" />
 											<figcaption>
-											  <h3>Electrónica</h3>
+											  <h1>Electrónica</h1>
+											</br>
 											  <p>Basica, Analogica y Avanzada.</p>
 											</figcaption>
 											<a href="#electronica"></a>
@@ -140,95 +170,31 @@
 									</div>
 									<div class="col-4 col-6-medium col-12-small">
 										<!--<a href="#digital" class="image fit"><img src="images/pic02.jpg" alt="electronica digital"><span>Electrónica digital</span></a>-->
-										<figure class="snip1361">
+										<figure class="snip1361 image fit">
 											<img src="images/pic02.jpg" alt="electronica digital" />
 											<figcaption>
-											  <h3>Digital</h3>
-											  <p>Control y diseño con circutos digitales.</p>
-											</figcaption>
-											<a href="#digital"></a>
-										</figure>
-									</div>
-									<div class="col-4 col-6-medium col-12-small">
-										<!--<a href="#arduino" class="image fit"><img src="images/arduino.jpg" alt="Programación en arduino"><span>Programación en Arduino</span></a>-->
-										<figure class="snip1361">
-											<img src="images/arduino.jpg" alt="Programación en Arduino" />
-											<figcaption>
-											  <h3>Programación en Arduino</h3>
-											  <p>Crea proyectos con la plataforma de moda.</p>
-											</figcaption>
-											<a href="#arduino"></a>
-										</figure>
-									</div>
-									<div class="col-4 col-6-medium col-12-small">
-										<!--<a href="#robotica" class="image fit"><img src="images/pic04.jpg" alt="Robótica"><span>Robótica</span></a>-->
-										<figure class="snip1361">
-											<img src="images/pic04.jpg" alt="Robótica" />
-											<figcaption>
-											  <h3>Robótica</h3>
+											  <h1>Robótica</h1>
+											</br>
 											  <p>Programa robots que responden a su entorno.</p>
 											</figcaption>
 											<a href="#robotica"></a>
 										</figure>
 									</div>
 									<div class="col-4 col-6-medium col-12-small">
-										<!--<a href="#linux" class="image fit"><img src="images/pic05.jpg" alt="Programación en Linux"><span>Programación en Linux</span></a>-->
-										<figure class="snip1361">
-											<img src="images/pic05.jpg" alt="Programación en Linux" />
+										<!--<a href="#arduino" class="image fit"><img src="images/arduino.jpg" alt="Programación en arduino"><span>Programación en Arduino</span></a>-->
+										<figure class="snip1361 image fit">
+											<img src="images/pic03.jpg" alt="Programación en Arduino" />
 											<figcaption>
-											  <h3>Programación en Linux</h3>
-											  <p>Diseña proyectos con el Sistema Operativo mas usado para entornos de control y redes.</p>
+											  <h1>Programación</h1>
+											</br>
+											  <p>Programa y controla tus robots.</p>
 											</figcaption>
-											<a href="#linux"></a>
+											<a href="#programacion"></a>
 										</figure>
 									</div>
-									<div class="col-4 col-6-medium col-12-small">
-										<!--<a href="#python" class="image fit"><img src="images/pic05.jpg" alt="Programación en Python"><span>Programación en Python</span></a>-->
-										<figure class="snip1361">
-											<img src="images/pic06.jpg" alt="Programación en Python" />
-											<figcaption>
-											  <h3>Programación en Pyhton</h3>
-											  <p>Programa y controla tus robots usando el lenguaje de programación en auge.</p>
-											</figcaption>
-											<a href="#python"></a>
-										</figure>
-									</div>
-									<div class="col-4 col-6-medium col-12-small">
-										<!--<a href="#java" class="image fit"><img src="images/pic07.jpg" alt="Programación en Java"><span>Programación en Java</span></a>-->
-										<figure class="snip1361">
-											<img src="images/pic07.jpg" alt="Programación en Java" />
-											<figcaption>
-											  <h3>Programación en Java</h3>
-											  <p>Enciende, apaga y monitorea tu casa con el lenguaje orientado a objetos por excelencia.</p>
-											</figcaption>
-											<a href="#java"></a>
-										</figure>
-									</div>
-									<div class="col-4 col-6-medium col-12-small">
-										<!--<a href="#html" class="image fit"><img src="images/pic08.jpg" alt="Programación en HTML"><span>Programación en HTML</span></a>-->
-										<figure class="snip1361">
-											<img src="images/pic08.jpg" alt="Programación en HTML" />
-											<figcaption>
-											  <h3>Programación en HTML</h3>
-											  <p>Diseña paginas web que podras usar para controlar a distancia tus robots.</p>
-											</figcaption>
-											<a href="#html"></a>
-										</figure>
-									</div>
-									<div class="col-4 col-6-medium col-12-small">
-										<!--<a href="#iot" class="image fit"><img src="images/iot.jpg" alt="Internet de la cosas"><span>IoT</span></a>-->
-										<figure class="snip1361">
-											<img src="images/iot.jpg" alt="Internet de las cosas" />
-											<figcaption>
-											  <h3>IoT</h3>
-											  <p>Diseña tu propio sistema de control en la nube.</p>
-											</figcaption>
-											<a href="#iot"></a>
-										</figure>
-									</div>
+									
 								</div>
 							</section>
-							<a href="#home" class="icon solid fa-chevron-left"><span>Inicio</span></a>
 						</article>
 
 						<!-- Especiales -->
@@ -242,9 +208,148 @@
 						</article>
 
 						<!-- Cursos para adultos -->
-
 						<!-- Electrónica -->
-						<article id="electronica" class="panel intro">
+						<article id="electronica" class="panel">
+							<header>
+								<h2></h2>
+							</header>
+							<a href="#adultos" class="icon solid fa-chevron-left" title="Cursos"></a>
+							<section>
+								<div class="row">
+									<div class="col-4 col-6-medium col-12-small">
+										<!--<a href="#electronica" class="image fit"><img src="images/pic01.jpg" alt="electronica"><span>Electrónica</span></a>-->
+										<figure class="snip1361 image fit">
+											<img src="images/pic01.jpg" alt="electronica basica" />
+											<figcaption>
+											  <h3>Básica</h3>
+											  <p></p>
+											</figcaption>
+											<a href="#electronica"></a>
+										</figure>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<!--<a href="#digital" class="image fit"><img src="images/pic02.jpg" alt="electronica digital"><span>Electrónica digital</span></a>-->
+										<figure class="snip1361 image fit">
+											<img src="images/pic02.jpg" alt="electronica digital" />
+											<figcaption>
+											  <h3>Avanzada</h3>
+											  <p></p>
+											</figcaption>
+											<a href="#robotica"></a>
+										</figure>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<!--<a href="#arduino" class="image fit"><img src="images/arduino.jpg" alt="Programación en arduino"><span>Programación en Arduino</span></a>-->
+										<figure class="snip1361 image fit">
+											<img src="images/pic03.jpg" alt="Programación en Arduino" />
+											<figcaption>
+											  <h3>Digital</h3>
+											  <p></p>
+											</figcaption>
+											<a href="#programación"></a>
+										</figure>
+									</div>
+									
+								</div>
+							</section>
+						</article>
+
+						<!-- Robótica -->
+						<article id="robotica" class="panel">
+							<header>
+								<h2></h2>
+							</header>
+							<a href="#adultos" class="icon solid fa-chevron-left" title="Cursos"></a>
+							<section>
+								<div class="row">
+									<div class="col-4 col-6-medium col-12-small">
+										<!--<a href="#electronica" class="image fit"><img src="images/pic01.jpg" alt="electronica"><span>Electrónica</span></a>-->
+										<figure class="snip1361 image fit">
+											<img src="images/pic01.jpg" alt="electronica basica" />
+											<figcaption>
+											  <h3>Sensores</h3>
+											  <p></p>
+											</figcaption>
+											<a href="#electronica"></a>
+										</figure>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<!--<a href="#digital" class="image fit"><img src="images/pic02.jpg" alt="electronica digital"><span>Electrónica digital</span></a>-->
+										<figure class="snip1361 image fit">
+											<img src="images/pic02.jpg" alt="electronica digital" />
+											<figcaption>
+											  <h3>Actuadores</h3>
+											  <p></p>
+											</figcaption>
+											<a href="#robotica"></a>
+										</figure>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<!--<a href="#arduino" class="image fit"><img src="images/arduino.jpg" alt="Programación en arduino"><span>Programación en Arduino</span></a>-->
+										<figure class="snip1361 image fit">
+											<img src="images/pic03.jpg" alt="Programación en Arduino" />
+											<figcaption>
+											  <h3>Arduino</h3>
+											  <p></p>
+											</figcaption>
+											<a href="#programación"></a>
+										</figure>
+									</div>
+									
+								</div>
+							</section>
+						</article>
+
+						<!-- Programación -->
+						<article id="programacion" class="panel">
+							<header>
+								<h2></h2>
+							</header>
+							<a href="#adultos" class="icon solid fa-chevron-left" title="Cursos"></a>
+							<section>
+								<div class="row">
+									<div class="col-4 col-6-medium col-12-small">
+										<!--<a href="#electronica" class="image fit"><img src="images/pic01.jpg" alt="electronica"><span>Electrónica</span></a>-->
+										<figure class="snip1361 image fit">
+											<img src="images/pic01.jpg" alt="electronica basica" />
+											<figcaption>
+											  <h3>Python</h3>
+											  <p></p>
+											</figcaption>
+											<a href="#electronica"></a>
+										</figure>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<!--<a href="#digital" class="image fit"><img src="images/pic02.jpg" alt="electronica digital"><span>Electrónica digital</span></a>-->
+										<figure class="snip1361 image fit">
+											<img src="images/pic02.jpg" alt="electronica digital" />
+											<figcaption>
+											  <h3>Java</h3>
+											  <p></p>
+											</figcaption>
+											<a href="#robotica"></a>
+										</figure>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<!--<a href="#arduino" class="image fit"><img src="images/arduino.jpg" alt="Programación en arduino"><span>Programación en Arduino</span></a>-->
+										<figure class="snip1361 image fit">
+											<img src="images/pic03.jpg" alt="Programación en Arduino" />
+											<figcaption>
+											  <h3>HTML</h3>
+											  <p></p>
+											</figcaption>
+											<a href="#programación"></a>
+										</figure>
+									</div>
+									
+								</div>
+							</section>
+						</article>
+
+
+					<!-- Plantillas de prueba -->
+						<!-- Electrónica -->
+						<article id="" class="panel intro">
 							<a href="#adultos" class="icon solid fa-chevron-left"><span>Cursos</span></a>
 							<header>
 								<h2>Electrónica 1-2-3.</h2>
@@ -318,7 +423,7 @@
 						</article>
 
 						<!-- Robótica -->
-						<article id="robotica" class="panel intro">
+						<article id="" class="panel intro">
 							<a href="#adultos" class="icon solid fa-chevron-left"><span>Cursos</span></a>
 							<header>
 								<h2>Robótica.</h2>
@@ -423,6 +528,7 @@
 							</header>
 								<img src="images/pic01.jpg" alt="" />
 						</article>
+					<!--		-->
 
 						<!-- Contacto -->
 						<article id="contacto" class="panel">
@@ -444,24 +550,30 @@
 			</div>
 
 		<!-- Scripts -->
+			<!-- Materialize JavaScript -->
+			<script src="framework/materialize/js/materialize.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="assets/lib/jquery-2.1.0.min.js"></script>
-			<script src="assets/src/js/jquery.swipebox.js"></script>
+			<!--<script
+			  src="https://code.jquery.com/jquery-2.1.0.min.js"
+			  integrity="sha256-8oQ1OnzE2X9v4gpRVRMb1DWHoPHJilbur1LP9ykQ9H0="
+			  crossorigin="anonymous">
+			</script>
+			<script src="plugins/swipebox/js/jquery.swipebox.min.js"></script>
 			<script type="text/javascript">
-				;( function( $ ) {
-				
-					$( '.swipebox' ).swipebox();
-					$( '.swipebox-video' ).swipebox({
-						beforeOpen: function() {}, // called before opening
-					});
+				jQuery(function($) {
+		
+					/* Basic Gallery */
+					$(".swipebox").swipebox();
 					
-				
-				} )( jQuery );
-				</script>
+					/* Video */
+					$(".swipebox-video").swipebox();
+			
+				});
+			</script>-->
 
 	</body>
 </html>
